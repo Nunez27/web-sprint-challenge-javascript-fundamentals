@@ -27,12 +27,12 @@ myFunction();
     2. Use a counter to return the summation of that number. 
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
-
 function summation(number) {
-  for (let i = 0; i < number.length; i++){
-    let counter = 0;
-    return counter += number.length
+  let counter = 0;
+  for (let i = 0; i <= number; i++){
+    counter += i
   }
+  return counter;
 }
  
 
@@ -57,12 +57,17 @@ const zooAnimals = [
   Use animalNames to populate and return the displayNames array with only the animal name and scientific name of each animal. 
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
-
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(array){
+    let displayNames = [];
+    array.forEach(function(item){
+    console.log(item.animal_name && item.scientific_name)
+      array.push(displayNames)
+    })
+    return displayNames
   }
-  
 
+  //  if (zooAnimals.includes(zooAnimals.animal_name && zooAnimals.scientific_name){
+      // array.push(displayNames)
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
   Using lowerCaseNames use .map() to create a new array of strings with the animal's names in lowercase and return the new array. 
