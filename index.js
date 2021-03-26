@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// The reason why the nested function has access to the variable internal is because it is nested. Since its nested JS looks first inside of its own function to see if that variable is declared there and if it isn't it goes above the nested function to see if its declared there. JS will continue to move up until it fines the variable.
 
 
 
@@ -28,10 +28,12 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  for (let i = 0; i < number.length; i++){
+    let counter = 0;
+    return counter += number.length
   }
+}
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
